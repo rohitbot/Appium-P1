@@ -16,7 +16,6 @@ class AppiumConfig:
             "appPackage": "org.khanacademy.android",
             "appActivity":"org.khanacademy.android.ui.library.MainActivity",
             "noReset":True
-            # "udid":"emulator-5554"
         }
 
         self.driver = webdriver.Remote(command_executor="http://localhost:4723/wd/hub", desired_capabilities=des_cap)
@@ -35,9 +34,9 @@ class TestAndroidDeviceLocal(AppiumConfig):
         self.driver.find_element(AppiumBy.XPATH, "//android.widget.TextView[@text='Sign in']").click()
         self.driver.find_element(AppiumBy.XPATH,
                             "//android.widget.EditText[@content-desc='Enter an e-mail address or username']").send_keys(
-            "dina")
+            "rohit")
         self.driver.find_element(AppiumBy.XPATH, "//android.widget.EditText[contains(@content-desc,'Pass')]").send_keys(
-            "dina123")
+            "bot123")
         # click on sign in
         self.driver.find_element(AppiumBy.XPATH, "(//android.widget.TextView[@text='Sign in'])[2]").click()
         # get the text "There was an issue signing in" and print it

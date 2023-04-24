@@ -6,12 +6,12 @@ des_cap={
     "platformVersion":"9.0",
     "deviceName":"Google Pixel 3",
     "bstack:options": {
-        "projectName": "First Python project",
+        "projectName": "First Appium project",
         "buildName": "browserstack-build-1",
         "sessionName": "BStack first_test",
         # Set your access credentials
-        "userName": "padmakshijain_U4kQfV",
-        "accessKey": "1hKTbvmoUbEL8BtVqbyh"
+        "userName": "rohitbehera_LiqmJB",
+        "accessKey": "hvknrqXW8eBGYNtZAw2y"
     }
 }
 

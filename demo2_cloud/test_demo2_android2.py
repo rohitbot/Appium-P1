@@ -16,8 +16,8 @@ class AppiumConfig:
                 "buildName": "browserstack-build-1",
                 "sessionName": "BStack first_test",
                 # Set your access credentials
-                "userName": "padmakshijain_U4kQfV",
-                "accessKey": "1hKTbvmoUbEL8BtVqbyh"
+                "userName": "rohitbehera_LiqmJB",
+                "accessKey": "hvknrqXW8eBGYNtZAw2y"
             }
         }
         self.driver = webdriver.Remote(command_executor="http://hub.browserstack.com/wd/hub",
@@ -49,8 +49,6 @@ class TestAndroidDeviceCloud(AppiumConfig):
             # send lastname as peter -
             self.driver.find_element(AppiumBy.XPATH, "//*[@content-desc='Last name']").send_keys("jain")
 
-            # send birthday Aug 20, 1995 - Birthday
-            # self.driver.find_element(AppiumBy.XPATH, "//*[@text='Birthday']").send_keys("August 20, 1995")
             self.driver.find_element(AppiumBy.XPATH, "//*[@text='Birthday']").click()
 
             # choose Aug
